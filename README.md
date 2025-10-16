@@ -39,49 +39,49 @@ UVICORN_WORKERS=<uvicorn_workers_number>
 ### Explanation
 
 #### Database
-`DB_TYPE` Type of database 
-(default: _postgresql_)  
-`DB_USER` Pre-created user in the database with rights to edit the database 
-(default: _generator_admin_)  
+`DB_TYPE` Type of database
+(default: _postgresql_)
+`DB_USER` Pre-created user in the database with rights to edit the database
+(default: _generator_admin_)
 `DB_PASS` Database user password
-(default: _generator_pass_)  
+(default: _generator_pass_)
 `DB_HOST` Database host
-(default: _localhost_)  
-`DB_PORT`  Database port 
-(default: _5432_)  
+(default: _localhost_)
+`DB_PORT`  Database port
+(default: _5432_)
 `DB_NAME`  Name of the previously created database
-(default: _settings_)  
+(default: _settings_)
 `DB_SCHEMA`  Database schema for work
-(default: _public_)  
+(default: _public_)
 
 #### Keycloak
 `KEYCLOAK_PROTOCOL` Protocol for internal communication of microservice with Keycloak
-(default: _http_)  
+(default: _http_)
 `KEYCLOAK_HOST` Host for internal communication of microservice with Keycloak
-(default: _keycloak_)  
+(default: _keycloak_)
 `KEYCLOAK_PORT` Port for internal communication of microservice with Keycloak
-(default: _8080_)  
+(default: _8080_)
 `KEYCLOAK_REDIRECT_PROTOCOL` Protocol that is used to redirect the user for authorization in Keycloak
-(default: _as in key `KEYCLOAK_PROTOCOL`_)  
+(default: _as in key `KEYCLOAK_PROTOCOL`_)
 `KEYCLOAK_REDIRECT_HOST` Host that is used to redirect the user for authorization in Keycloak
-(default: _as in key `KEYCLOAK_HOST`_)  
+(default: _as in key `KEYCLOAK_HOST`_)
 `KEYCLOAK_REDIRECT_PORT` Port that is used to redirect the user for authorization in Keycloak
-(default: _as in key `KEYCLOAK_PORT`_)  
+(default: _as in key `KEYCLOAK_PORT`_)
 `KEYCLOAK_REALM`  Realm for the current microservice
-(default: _master_)  
-`KEYCLOAK_CLIENT_ID` Client ID for the current microservice 
+(default: _master_)
+`KEYCLOAK_CLIENT_ID` Client ID for the current microservice
 `KEYCLOAK_CLIENT_SECRET` Client secret for the current microservice
-(default: _EMPTY_)  
+(default: _EMPTY_)
 
 #### Other
 `DEBUG` Debug mode
-(default: _False_)  
+(default: _False_)
 `DISABLE_SECURITY` disable keycloak
 (default: _False_)
 
 #### Compose
 
-- `REGISTRY_URL` - Docker regitry URL, e.g. `harbor.avataa.dev`
+- `REGISTRY_URL` - Docker regitry URL, e.g. `harbor.domain.com`
 - `PLATFORM_PROJECT_NAME` - Docker regitry project Docker image can be downloaded from, e.g. `avataa`
 
 ### Requirements
